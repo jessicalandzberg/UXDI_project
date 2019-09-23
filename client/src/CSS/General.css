@@ -1,0 +1,45 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav"
+    "Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons"
+    "Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons"
+    "Main Main Main Main Main Main Main Main Main Main"
+    "Main Main Main Main Main Main Main Main Main Main"
+    "Main Main Main Main Main Main Main Main Main Main"
+    "Main Main Main Main Main Main Main Main Main Main"
+    "Main Main Main Main Main Main Main Main Main Main"
+    "Main Main Main Main Main Main Main Main Main Main"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+}
+
+.NavComponent {
+  background: red;
+  grid-area: Nav;
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonsComponent {
+  background: blue;
+  grid-area: Buttons;
+  display: flex;
+  justify-content: center;
+}
+
+.MainComponent {
+  grid-area: Main;
+  display: flex;
+  justify-content: center;
+}
+
+.FooterComponent {
+  background: green;
+  grid-area: Footer;
+  display: flex;
+  justify-content: center;
+}
