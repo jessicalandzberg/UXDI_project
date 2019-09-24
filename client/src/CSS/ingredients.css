@@ -33,6 +33,9 @@
   background: #F29F05;
   border-radius: 12px;
 }
+.NextPreviousButtons {
+  margin-bottom: 10px;
+}
 
 a:link, a:hover, a:active, a:visited {
   text-decoration: none;
