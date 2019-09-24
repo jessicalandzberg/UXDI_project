@@ -1,5 +1,5 @@
 import React from 'react';
-import General from '../CSS/General.css'
+import ingredients from '../CSS/ingredients.css'
 import { meats, grains, veggies, spices} from './listOfIngredients';
 
 class Ingredients extends React.Component {
@@ -11,23 +11,23 @@ class Ingredients extends React.Component {
   }
 
   handleClick = (food) => {
-    let foods = food.target.value
+    let foods = food.target.alt
     this.setState((prevState) => ({
       ingredients: [...prevState.ingredients, foods]
-    }), () => console.log(this.state.ingredients))
+    }))
 }
 
   render () {
     let meatData = meats.map((d, i) => {
       return (
         <>
-          <ul>
+          <ul className="ulIngredients">
             <button
             key={i}
-            value={d}
-            onClick={this.handleClick}>
-            {d}
+            value={d}>
+            <img alt={d.food} src={d.image} height='80' width='80' onClick={this.handleClick}/>
             </button>
+            {d.food}
           </ul>
         </>
       )
@@ -76,8 +76,7 @@ class Ingredients extends React.Component {
     })
     return (
       <nav className="IngredientsComponent">
-        <h2>Ingredients</h2>
-        <h3>What ingredients do you have? Select all that apply</h3>
+        <h3>Select the ingredients that you have:</h3>
         <div className='ingredients'>
           <div className='left'>
             <h4>Meats</h4>
