@@ -16,10 +16,10 @@ class Main extends React.Component {
             <Route path= "/ingredients"
             render = {() => <Ingredients
                             /> } />
-            <Route path= "/tools"
+            <Route path= "/Cooking_Utensils"
             render = {() => <Tools
                             /> } />
-            <Route path= "/time"
+            <Route path= "/Time_Needed"
             render = {() => <Time
                             />} />
             <Route path= "/recipe"

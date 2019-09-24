@@ -9,7 +9,7 @@ font-family: 'Montserrat', sans-serif; */
   min-height: 100vh;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50px 100px 1fr 50px;
+  grid-template-rows: 65px 165px 1fr 65px;
   grid-template-areas:
     "Nav Nav Nav Nav"
     "Buttons Buttons Buttons Buttons"
@@ -18,18 +18,11 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .NavComponent {
-  font-size: 24;
-  background: #6FBFA2;
   grid-area: Nav;
-  display: flex;
-  justify-content: center;
 }
 
 .ButtonsComponent {
-  background: blue;
   grid-area: Buttons;
-  display: flex;
-  justify-content: center;
 }
 
 .MainComponent {
@@ -39,10 +32,7 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .FooterComponent {
-  background: green;
   grid-area: Footer;
-  display: flex;
-  justify-content: center;
 }
 
 .ingredients {

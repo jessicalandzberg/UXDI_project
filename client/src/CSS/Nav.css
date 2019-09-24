@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap');
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Montserrat', sans-serif; */
+.NavComponent {
+  background: #6FBFA2;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 24;
+  display: flex;
+}
+
+.NavRow {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
