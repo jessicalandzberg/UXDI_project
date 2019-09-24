@@ -1,5 +1,7 @@
 import React from 'react';
 import '../CSS/Time.css'
+import {Link} from 'react-router-dom'
+
 
 function Time() {
     return(
@@ -32,6 +34,19 @@ function Time() {
               <label for="overhour"> 60+ minutes </label>
             </div>
           </form>
+
+          <div className= "NextPreviousButtons">
+            <button className= "NextPrevious">
+              <Link to='/Time_Needed'>
+                Previous
+              </Link>
+            </button>
+            <button className= "NextPrevious">
+              <Link to='/Time_Needed'>
+                Find me a recipe
+              </Link>
+            </button>
+          </div>
         </div>
       </nav>
     )

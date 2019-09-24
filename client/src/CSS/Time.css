@@ -16,3 +16,19 @@
 .formRow {
   margin-bottom: 20px;
 }
+
+.NextPreviousButtons {
+  display: flex;
+  justify-content: space-between
+}
+.TimeComponent button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background: #F29F05;
+  border-radius: 12px;
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: black;
+}
