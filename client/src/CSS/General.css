@@ -5,6 +5,7 @@ font-family: 'Montserrat', sans-serif; */
 
 .App {
   font-family: 'Montserrat', sans-serif;
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -18,7 +19,10 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .NavComponent {
+  width: 100%;
+  height: 65px;
   grid-area: Nav;
+  position: fixed;
 }
 
 .ButtonsComponent {

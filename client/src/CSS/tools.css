@@ -3,10 +3,37 @@
   width:100%;
   display: flex;
   justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.ToolsContent {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .ulTools {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.NextPreviousButtons {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between
+}
+
+.NextPreviousButtons button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background: #F29F05;
+  border-radius: 12px;
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: black;
 }

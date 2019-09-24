@@ -1,6 +1,7 @@
 import React from 'react';
 import ingredients from '../CSS/ingredients.css'
 import { meats, veggies, spices} from './listOfIngredients';
+import {Link} from 'react-router-dom'
 
 class Ingredients extends React.Component {
   constructor(props) {
@@ -62,34 +63,47 @@ class Ingredients extends React.Component {
     })
     return (
       <div className="IngredientsComponent">
+
         <div className= "IngredientsContent">
-          <h3>Select the ingredients that you have:</h3>
+          <h3>Select ingredients you have:</h3>
+
           <div className='ingredients'>
             <div className='left'>
-              <h4>Meats</h4>
+              <h4>Meats: </h4>
             </div>
             <div className='right'>
               {meatData}
             </div>
           </div>
+
           <div className='ingredients'>
             <div className='left'>
-              <h4>Veggies</h4>
+              <h4>Veggies: </h4>
             </div>
             <div className='right'>
               {veggieData}
             </div>
           </div>
+
           <div className='ingredients'>
             <div className='left'>
-              <h4>Spices</h4>
+              <h4>Spices: </h4>
             </div>
             <div className='right'>
               {spiceData}
             </div>
           </div>
-          <button>Next</button>
+
+          <div className= "NextPreviousButtons">
+            <button className= "NextPrevious">
+              <Link to='/Cooking_Utensils'>
+                Next
+              </Link>
+            </button>
+          </div>
+
         </div>
+
       </div>
     )
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 import tools from '../CSS/tools.css'
 import { equipment} from './listOfTools';
+import {Link} from 'react-router-dom'
+
 
 class Tools extends React.Component {
   constructor(props) {
@@ -21,7 +23,7 @@ class Tools extends React.Component {
     let toolData = equipment.map((d, i) => {
       return (
         <>
-          <ul className="ulIngredients">
+          <ul className="ulTools">
             <button
             key={i}
             value={d}>
@@ -34,19 +36,30 @@ class Tools extends React.Component {
     })
     return (
       <div className="ToolsComponent">
-        <div className= "ToolsContent">
-          <h3>Select what tools that you have:</h3>
-          <div className='tools'>
-            <div className='left'>
-              <h4>Tools</h4>
-            </div>
-            <div className='right'>
-              {toolData}
+        <div>
+          <div className= "ToolsContent">
+            <h3>Select what tools you have:</h3>
+            <div className='tools'>
+              <div className='right'>
+                {toolData}
+              </div>
             </div>
           </div>
-          <button>Next</button>
-        </div>
+
+          <div className= "NextPreviousButtons">
+              <button className= "NextPrevious">
+                <Link to='/ingredients'>
+                  Back
+                </Link>
+              </button>
+              <button className= "NextPrevious">
+                <Link to='/Time_Needed'>
+                  Next
+                </Link>
+              </button>
+          </div>
       </div>
+    </div>
     )
   }
 }

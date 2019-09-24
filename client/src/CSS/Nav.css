@@ -7,6 +7,7 @@ font-family: 'Montserrat', sans-serif; */
   font-family: 'Permanent Marker', cursive;
   font-size: 24;
   display: flex;
+  align-items: center;
 }
 
 .NavRow {

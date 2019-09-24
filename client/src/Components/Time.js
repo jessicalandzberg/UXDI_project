@@ -37,12 +37,12 @@ function Time() {
 
           <div className= "NextPreviousButtons">
             <button className= "NextPrevious">
-              <Link to='/Time_Needed'>
-                Previous
+              <Link to='/Cooking_Utensils'>
+                Back
               </Link>
             </button>
             <button className= "NextPrevious">
-              <Link to='/Time_Needed'>
+              <Link to='/'>
                 Find me a recipe
               </Link>
             </button>
