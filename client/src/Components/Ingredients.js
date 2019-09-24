@@ -1,6 +1,6 @@
 import React from 'react';
 import ingredients from '../CSS/ingredients.css'
-import { meats, grains, veggies, spices} from './listOfIngredients';
+import { meats, veggies, spices} from './listOfIngredients';
 
 class Ingredients extends React.Component {
   constructor(props) {
@@ -32,30 +32,16 @@ class Ingredients extends React.Component {
         </>
       )
     })
-    let grainData = grains.map((d, i) => {
-      return (
-        <>
-          <ul>
-            <button
-            key={i}
-            value={d}
-            onClick={this.handleClick}>
-            {d}
-            </button>
-          </ul>
-        </>
-      )
-    })
     let veggieData = veggies.map((d, i) => {
       return (
         <>
-          <ul>
+          <ul className="ulIngredients">
             <button
             key={i}
-            value={d}
-            onClick={this.handleClick}>
-            {d}
+            value={d}>
+            <img alt={d.food} src={d.image} height='80' width='80' onClick={this.handleClick}/>
             </button>
+            {d.food}
           </ul>
         </>
       )
@@ -63,54 +49,48 @@ class Ingredients extends React.Component {
     let spiceData = spices.map((d, i) => {
       return (
         <>
-          <ul>
+          <ul className="ulIngredients">
             <button
             key={i}
-            value={d}
-            onClick={this.handleClick}>
-            {d}
+            value={d}>
+            <img alt={d.food} src={d.image} height='80' width='80' onClick={this.handleClick}/>
             </button>
+            {d.food}
           </ul>
         </>
       )
     })
     return (
-      <nav className="IngredientsComponent">
-        <h3>Select the ingredients that you have:</h3>
-        <div className='ingredients'>
-          <div className='left'>
-            <h4>Meats</h4>
+      <div className="IngredientsComponent">
+        <div className= "IngredientsContent">
+          <h3>Select the ingredients that you have:</h3>
+          <div className='ingredients'>
+            <div className='left'>
+              <h4>Meats</h4>
+            </div>
+            <div className='right'>
+              {meatData}
+            </div>
           </div>
-          <div className='right'>
-            {meatData}
+          <div className='ingredients'>
+            <div className='left'>
+              <h4>Veggies</h4>
+            </div>
+            <div className='right'>
+              {veggieData}
+            </div>
           </div>
+          <div className='ingredients'>
+            <div className='left'>
+              <h4>Spices</h4>
+            </div>
+            <div className='right'>
+              {spiceData}
+            </div>
+          </div>
+          <button>Next</button>
         </div>
-        <div className='ingredients'>
-          <div className='left'>
-            <h4>Grains</h4>
-          </div>
-          <div className='right'>
-            {grainData}
-          </div>
-        </div>
-        <div className='ingredients'>
-          <div className='left'>
-            <h4>Veggies</h4>
-          </div>
-          <div className='right'>
-            {veggieData}
-          </div>
-        </div>
-        <div className='ingredients'>
-          <div className='left'>
-            <h4>Spices</h4>
-          </div>
-          <div className='right'>
-            {spiceData}
-          </div>
-        </div>
-        <button>Next</button>
-      </nav>
+      </div>
     )
   }
 }
