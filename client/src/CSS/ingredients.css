@@ -1,0 +1,9 @@
+.IngredientsComponent {
+  background-color: #F2ECD8;
+}
+
+.ulIngredients {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
