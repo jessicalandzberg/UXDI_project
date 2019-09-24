@@ -7,18 +7,18 @@
   font-size: 18px;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .ButtonsComponent p {
-  width: 25%;
+  width: 40%;
   margin: 0;
+  text-align: center;
 }
 
 .ButtonsColumn {
-  width: 75%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -30,8 +30,22 @@
 .ButtonsComponent button {
   font-family: 'Permanent Marker', cursive;
   font-size: 18px;
+  border: black;
+  border-radius: 12px;
+  width: 170px;
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .activeButton {
-  background: yellow;
+  background: #F29F05;
+}
+
+@media screen and (min-width: 1000px) {
+  .ButtonsColumn {
+    flex-direction: row;
+  }
 }
