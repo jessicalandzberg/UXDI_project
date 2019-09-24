@@ -1,9 +1,10 @@
 import React from 'react';
+import '../CSS/Home.css'
 
 function Home() {
     return(
       <nav className="HomeComponent">
-        <h4> this is Main: Home </h4>
+      <p> test </p>
       </nav>
     )
 }

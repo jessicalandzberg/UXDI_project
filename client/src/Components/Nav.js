@@ -6,9 +6,8 @@ function Nav() {
     return(
       <nav className="NavComponent">
         <div className= "NavRow">
-          <h1>Image</h1>
+          <img src="https://res.cloudinary.com/dsz6nyzpz/image/upload/v1569339615/Food/1946835-200_mugucw.png" alt="logo" height="55" width="55" />
           <h1>Food Now</h1>
-          <h1>X</h1>
         </div>
       </nav>
     )
