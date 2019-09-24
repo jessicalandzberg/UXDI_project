@@ -1,11 +1,11 @@
-.IngredientsComponent {
+.ToolsComponent {
   background-color: #F2ECD8;
   width:100%;
   display: flex;
   justify-content: center;
 }
 
-.ulIngredients {
+.ulTools {
   display: flex;
   flex-direction: column;
   text-align: center;
