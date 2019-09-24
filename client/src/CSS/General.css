@@ -1,24 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap');
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Montserrat', sans-serif; */
+
 .App {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50px 100px 1fr 50px;
   grid-template-areas:
-    "Nav Nav Nav Nav Nav Nav Nav Nav Nav Nav"
-    "Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons"
-    "Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons Buttons"
-    "Main Main Main Main Main Main Main Main Main Main"
-    "Main Main Main Main Main Main Main Main Main Main"
-    "Main Main Main Main Main Main Main Main Main Main"
-    "Main Main Main Main Main Main Main Main Main Main"
-    "Main Main Main Main Main Main Main Main Main Main"
-    "Main Main Main Main Main Main Main Main Main Main"
-    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+    "Nav Nav Nav Nav"
+    "Buttons Buttons Buttons Buttons"
+    "Main Main Main Main"
+    "Footer Footer Footer Footer"
 }
 
 .NavComponent {
-  background: red;
+  font-size: 24;
+  background: #6FBFA2;
   grid-area: Nav;
   display: flex;
   justify-content: center;
@@ -42,4 +43,14 @@
   grid-area: Footer;
   display: flex;
   justify-content: center;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
 }
