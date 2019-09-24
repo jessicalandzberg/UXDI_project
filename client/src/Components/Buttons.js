@@ -1,10 +1,44 @@
 import React from 'react';
+import '../CSS/Buttons.css';
+import {Link} from 'react-router-dom'
 
-function Buttons() {
+
+
+function Buttons(props) {
     return(
-      <nav className="ButtonsComponent">
-        <h1> this is the BUTTONS Component </h1>
-      </nav>
+      <div className="ButtonsComponent">
+        <p> Tell us what you have: </p>
+        <div className="ButtonsColumn">
+          <button className=
+          {
+            props.currentPath==="/ingredients" ? "activeButton": ""
+          }>
+            <Link to='/ingredients'>
+              Ingredients
+            </Link>
+          </button>
+
+          <button className=
+          {
+            props.currentPath==="/Cooking_Utensils" ? "activeButton": ""
+          }>
+            <Link to='/Cooking_Utensils'>
+              Cooking Utensils
+            </Link>
+          </button>
+
+          <button className=
+          {
+            props.currentPath==="/Time_Needed" ? "activeButton": ""
+          }>
+            <Link to='/Time_Needed'>
+              Time Needed
+            </Link>
+          </button>
+
+        </div>
+
+      </div>
     )
 }
 

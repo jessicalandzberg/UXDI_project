@@ -1,5 +1,6 @@
 import React from 'react';
 import './CSS/General.css';
+import {withRouter} from 'react-router-dom'
 import Main from "./Components/Main"
 import Buttons from "./Components/Buttons"
 import Nav from "./Components/Nav"
@@ -10,7 +11,7 @@ class App extends React.Component {
     return(
       <div className="App">
         <Nav />
-        <Buttons />
+        <Buttons currentPath= {this.props.location.pathname}/>
         <Main />
         <Footer />
       </div>
@@ -18,4 +19,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withRouter(App);

@@ -1,0 +1,8 @@
+.FooterComponent {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 15px;
+  background: #6FBFA2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
